@@ -9,6 +9,7 @@ This clock project is a beginner level project based on seven-segment Leds and 7
  Four seven segment LEDs(Common Anode) with all pins connected to each other (Except Common Anode pin)
  
  Arduino Uno: 
+              
               Pin 12 is connected to SER    pin(14) of 74HC595;
               
               Pin 11 is connected to RCLK   pin(12) of 74HC595;
@@ -24,6 +25,7 @@ This clock project is a beginner level project based on seven-segment Leds and 7
               Pin 6  is connected to common anode pin of righttmost seven segment;
           
  74HC595:
+              
               pin 15 is connected to LED A of seven segment ;
               
               pin 1  is connected to LED B of seven segment ; 
