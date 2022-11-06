@@ -10,9 +10,10 @@ int n1;
 int n2;
 int n3;
 int n4;
+
 String n;
-unsigned long prevmillis=0;
 String s="11000000111110011010010010110000100110011001001010000010111110001000000010010000";
+
 void inpPos(){
   digitalWrite(datapin,1);
   digitalWrite(clkpin,1);
@@ -25,6 +26,7 @@ void inpNeg(){
   digitalWrite(clkpin,0);
   digitalWrite(datapin,1);
 }
+
 void print_i(int i,int dg){
   digitalWrite(latchpin,0);
   if(dg==dg2){
@@ -46,6 +48,7 @@ void print_i(int i,int dg){
   delay(5);
   digitalWrite(dg,LOW);
 }
+
 void print_4digit(int n){
    n1=n/1000;
   n=n%1000;
@@ -62,6 +65,7 @@ void print_4digit(int n){
     
   
 }
+
 void setup(){
   Serial.begin(9600);
   pinMode(datapin,OUTPUT);
@@ -80,11 +84,13 @@ void setup(){
   Serial.println("first two digits for hrs");
   Serial.println("last two digits for min");
 }
+
 void reset(){
 Serial.println("always give input in 4 digits");
   Serial.println("first two digits for hrs");
   Serial.println("last two digits for min");
 }
+
 int minB=30;
 int hrsB=12;
 
